@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonJsonSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener datos JSON con login" />
+    <Button
+        android:id="@+id/buttonXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener datos XML" />
+    <Button
+        android:id="@+id/buttonJson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener datos JSON e Imagenes" />
+    <Button
+        android:id="@+id/buttonSendParams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar parametros" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
